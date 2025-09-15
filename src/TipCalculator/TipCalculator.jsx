@@ -28,15 +28,15 @@ const TipCalculator = () => {
             id="bill"
           />
         </label>
-        <label className="flex flex-col gap-2" htmlFor="percentage">
+        <label className="flex flex-col gap-2" htmlFor="tips">
           Tip percentage:
           <input
             value={tips}
             onChange={(e) => setTips(e.target.value)}
             className="border border-gray-300 h-8 px-3"
             type="number"
-            name="percentage"
-            id="percentage"
+            name="tips"
+            id="tips"
           />
         </label>
         <button
@@ -45,10 +45,10 @@ const TipCalculator = () => {
         >
           CALCULATE
         </button>
+        <p>
+          Total: <span className="font-bold">{total && total.toFixed(2)}</span>
+        </p>
       </form>
-      <p className="mt-3">
-        Total: <span className="font-bold">{total && total.toFixed(2)}</span>
-      </p>
     </div>
   );
 };

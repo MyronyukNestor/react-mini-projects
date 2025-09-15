@@ -1,7 +1,38 @@
 
 const TemperatureConverter = () => {
   return (
-    <div>TemperatureConverter</div>
+        <div className="w-1/3 rounded-2xl bg-white shadow-xl">
+      <form className="flex flex-col gap-3" >
+        <h1 className=" text-center text-3xl font-bold">Tip Calculator</h1>
+        <p>Enter the bill amount and tip percentage to calculate the total.</p>
+        <label className="flex flex-col gap-2" htmlFor="bill">
+          Bill amount:
+          <input
+            className="border border-gray-300 h-8 px-3"
+            type="number"
+            name="bill"
+            id="bill"
+          />
+        </label>
+        <label className="flex flex-col gap-2" htmlFor="percentage">
+          Tip percentage:
+          <input
+            className="border border-gray-300 h-8 px-3"
+            type="number"
+            name="percentage"
+            id="percentage"
+          />
+        </label>
+        <button
+          type="submit"
+          className="mt-2 bg-green-600 hover:bg-green-700 h-10 text-white text-xl cursor-pointer duration-200"
+        >
+          CALCULATE
+        </button>
+      </form>
+      <p className="mt-3">
+      </p>
+    </div>
   )
 }
 
