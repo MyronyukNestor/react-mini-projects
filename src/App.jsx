@@ -1,4 +1,5 @@
 import TemperatureConverter from "./TemperatureConverter/TemperatureConverter";
+import TestimonialSlider from "./TestimonialSlider/TestimonialSlider";
 import TipCalculator from "./TipCalculator/TipCalculator";
 
 const App = () => {
@@ -9,6 +10,9 @@ const App = () => {
       </div>
       <div className="h-screen flex justify-center items-center bg-emerald-600">
         <TemperatureConverter />
+      </div>
+      <div className="h-screen flex justify-center items-center bg-purple-200">
+        <TestimonialSlider />
       </div>
     </div>
   );
