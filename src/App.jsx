@@ -7,7 +7,7 @@ const App = () => {
       <div className="h-screen flex justify-center items-center bg-gray-200">
         <TipCalculator />
       </div>
-      <div className="h-screen flex justify-center items-center bg-gray-600">
+      <div className="h-screen flex justify-center items-center bg-emerald-600">
         <TemperatureConverter />
       </div>
     </div>

@@ -1,39 +1,92 @@
+import { useState } from "react";
 
 const TemperatureConverter = () => {
-  return (
-        <div className="w-1/3 rounded-2xl bg-white shadow-xl">
-      <form className="flex flex-col gap-3" >
-        <h1 className=" text-center text-3xl font-bold">Tip Calculator</h1>
-        <p>Enter the bill amount and tip percentage to calculate the total.</p>
-        <label className="flex flex-col gap-2" htmlFor="bill">
-          Bill amount:
-          <input
-            className="border border-gray-300 h-8 px-3"
-            type="number"
-            name="bill"
-            id="bill"
-          />
-        </label>
-        <label className="flex flex-col gap-2" htmlFor="percentage">
-          Tip percentage:
-          <input
-            className="border border-gray-300 h-8 px-3"
-            type="number"
-            name="percentage"
-            id="percentage"
-          />
-        </label>
-        <button
-          type="submit"
-          className="mt-2 bg-green-600 hover:bg-green-700 h-10 text-white text-xl cursor-pointer duration-200"
-        >
-          CALCULATE
-        </button>
-      </form>
-      <p className="mt-3">
-      </p>
-    </div>
-  )
-}
+  const [celsius, setCelsius] = useState("");
+  const [fahrenheit, setFahrenheit] = useState("");
+  const [kelvin, setKelvin] = useState("");
 
-export default TemperatureConverter
+  const convert = (e) => {
+    const value = e.target.value;
+    const name = e.target.name;
+
+    if (value === "" || value === "-") {
+      setCelsius("");
+      setFahrenheit("");
+      setKelvin("");
+      return;
+    }
+
+    const numValue = parseFloat(value);
+
+    if (name === "celsius") {
+      setCelsius(value);
+      setFahrenheit(((numValue * 9) / 5 + 32).toFixed(2));
+      setKelvin((numValue + 273.15).toFixed(2));
+    } else if (name === "fahrenheit") {
+      setFahrenheit(value);
+      setCelsius((((numValue - 32) * 5) / 9).toFixed(2));
+      setKelvin((((numValue - 32) * 5) / 9 + 273.15).toFixed(2));
+    } else if (name === "kelvin") {
+      setKelvin(value);
+      setCelsius((numValue - 273.15).toFixed(2));
+      setFahrenheit((((numValue - 273.15) * 9) / 5 + 32).toFixed(2));
+    }
+  };
+
+  return (
+    <div className="w-1/4 rounded-2xl bg-emerald-100 shadow-xl p-10">
+      <form className="flex flex-col gap-3">
+        <h1 className=" text-center text-3xl font-bold text-emerald-600 mb-5">
+          Temperature Converter
+        </h1>
+        <label
+          className="flex justify-between gap-2 text-emerald-600 font-semibold"
+          htmlFor="Celsius"
+        >
+          Celsius:
+          <input
+            value={celsius}
+            onChange={convert}
+            className="border border-gray-300 h-8 px-3"
+            type="number"
+            name="celsius"
+            id="celsius"
+            step="any"
+          />
+        </label>
+        <label
+          className="flex justify-between gap-2 text-emerald-600 font-semibold"
+          htmlFor="Fahrenheit"
+        >
+          Fahrenheit:
+          <input
+            value={fahrenheit}
+            onChange={convert}
+            className="border border-gray-300 h-8 px-3"
+            type="number"
+            name="fahrenheit"
+            id="fahrenheit"
+            step="any"
+          />
+        </label>
+        <label
+          className="flex justify-between gap-2 text-emerald-600 font-semibold"
+          htmlFor="Kelvin"
+        >
+          Kelvin:
+          <input
+            value={kelvin}
+            onChange={convert}
+            className="border border-gray-300 h-8 px-3"
+            type="number"
+            name="kelvin"
+            id="kelvin"
+            step="any"
+          />
+        </label>
+      </form>
+    </div>
+  );
+};
+
+export default TemperatureConverter;
