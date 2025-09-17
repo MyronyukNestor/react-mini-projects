@@ -1,6 +1,7 @@
-import TemperatureConverter from "./TemperatureConverter/TemperatureConverter";
-import TestimonialSlider from "./TestimonialSlider/TestimonialSlider";
-import TipCalculator from "./TipCalculator/TipCalculator";
+import AgeCalculator from "./projects/AgeCalculator/AgeCalculator";
+import TemperatureConverter from "./projects/TemperatureConverter/TemperatureConverter";
+import TestimonialSlider from "./projects/TestimonialSlider/TestimonialSlider";
+import TipCalculator from "./projects/TipCalculator/TipCalculator";
 
 const App = () => {
   return (
@@ -13,6 +14,9 @@ const App = () => {
       </div>
       <div className="h-screen flex justify-center items-center bg-purple-200">
         <TestimonialSlider />
+      </div>
+      <div className="h-screen flex justify-center items-center bg-gray-300">
+        <AgeCalculator />
       </div>
     </div>
   );
