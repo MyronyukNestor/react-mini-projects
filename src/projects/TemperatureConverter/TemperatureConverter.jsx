@@ -34,7 +34,7 @@ const TemperatureConverter = () => {
   };
 
   return (
-    <div className="w-1/4 rounded-2xl bg-emerald-100 shadow-xl p-10">
+    <div className="w-xl rounded-2xl bg-emerald-100 shadow-xl p-10">
       <form className="flex flex-col gap-3">
         <h1 className=" text-center text-3xl font-bold text-emerald-600 mb-5">
           Temperature Converter
@@ -47,7 +47,7 @@ const TemperatureConverter = () => {
           <input
             value={celsius}
             onChange={convert}
-            className="border border-gray-300 h-8 px-3"
+            className="border border-gray-400 h-8 px-3"
             type="number"
             name="celsius"
             id="celsius"
@@ -62,7 +62,7 @@ const TemperatureConverter = () => {
           <input
             value={fahrenheit}
             onChange={convert}
-            className="border border-gray-300 h-8 px-3"
+            className="border border-gray-400 h-8 px-3"
             type="number"
             name="fahrenheit"
             id="fahrenheit"
@@ -77,7 +77,7 @@ const TemperatureConverter = () => {
           <input
             value={kelvin}
             onChange={convert}
-            className="border border-gray-300 h-8 px-3"
+            className="border border-gray-400 h-8 px-3"
             type="number"
             name="kelvin"
             id="kelvin"
