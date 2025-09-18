@@ -8,7 +8,7 @@ import TipCalculator from "./projects/TipCalculator/TipCalculator";
 const App = () => {
   return (
     <div className="flex flex-col">
-      {/* <div className="h-screen flex justify-center items-center bg-gray-200">
+      <div className="h-screen flex justify-center items-center bg-gray-200">
         <TipCalculator />
       </div>
       <div className="h-screen flex justify-center items-center bg-emerald-600">
@@ -22,7 +22,7 @@ const App = () => {
       </div>
       <div>
         <RecipeBook />
-      </div> */}
+      </div>
       <div className="min-h-screen flex justify-center bg-gray-300">
         <DiceRollSimulator />
       </div>
