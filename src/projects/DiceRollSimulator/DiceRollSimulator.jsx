@@ -63,7 +63,7 @@ const DiceRollSimulator = () => {
         </button>
       </div>
 
-      <ul className="max-w-xl flex flex-col gap-3 mt-7 mx-auto">
+      <ul className="min-w-xl flex flex-col gap-3 mt-7 mx-auto">
         {rollHistory.map((el, idx) => (
           <li
             key={idx}
