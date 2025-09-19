@@ -74,7 +74,7 @@ const RecipeBook = () => {
             </div>
           ))}
 
-          <div className="flex justify-center">
+          <div className="flex justify-center py-5">
             <button
               onClick={() => setMoreRecipes(moreRecipes + 5)}
               className="bg-blue-800 hover:bg-blue-900 text-white px-5 py-3 rounded-xl cursor-pointer duration-150"
