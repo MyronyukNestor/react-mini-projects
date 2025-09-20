@@ -25,7 +25,7 @@ const TabsSection = () => {
   const [tab, setTab] = useState(0);
 
   const changeTab = (currentTab) => {
-    setTab(currentTab - 1);
+    setTab(currentTab);
   };
 
   return (
@@ -39,7 +39,7 @@ const TabsSection = () => {
         <div className="flex gap-4 mb-6">
           {data.map((item, idx) => (
             <button
-              onClick={() => changeTab(idx + 1)}
+              onClick={() => changeTab(idx)}
               className={`px-4 py-2 rounded-lg font-semibold transition 
               ${
                 idx === tab
