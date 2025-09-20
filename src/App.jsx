@@ -8,7 +8,7 @@ import TipCalculator from "./projects/TipCalculator/TipCalculator";
 
 const App = () => {
 
-  // test
+  // test 3
 
   return (
     <div className="flex flex-col">
