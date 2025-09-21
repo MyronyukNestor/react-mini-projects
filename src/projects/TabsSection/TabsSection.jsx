@@ -24,10 +24,6 @@ const data = [
 const TabsSection = () => {
   const [tab, setTab] = useState(0);
 
-  const changeTab = (currentTab) => {
-    setTab(currentTab);
-  };
-
   return (
     <div className="flex items-center justify-center gap-10 p-8">
       <img
@@ -39,7 +35,7 @@ const TabsSection = () => {
         <div className="flex gap-4 mb-6">
           {data.map((item, idx) => (
             <button
-              onClick={() => changeTab(idx)}
+              onClick={() => setTab(idx)}
               className={`px-4 py-2 rounded-lg font-semibold transition 
               ${
                 idx === tab
