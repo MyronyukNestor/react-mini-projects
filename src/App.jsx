@@ -2,6 +2,7 @@ import AgeCalculator from "./projects/AgeCalculator/AgeCalculator";
 import DiceRollSimulator from "./projects/DiceRollSimulator/DiceRollSimulator";
 import RecipeBook from "./projects/RecipeBook/RecipeBook";
 import RockPaperScissors from "./projects/RockPaperScissors/RockPaperScissors";
+import StepProgressBar from "./projects/StepProgressBar/StepProgressBar";
 import TabsSection from "./projects/TabsSection/TabsSection";
 import TemperatureConverter from "./projects/TemperatureConverter/TemperatureConverter";
 import TestimonialSlider from "./projects/TestimonialSlider/TestimonialSlider";
@@ -34,6 +35,9 @@ const App = () => {
       </div>
       <div className="h-screen flex justify-center items-center bg-pink-300">
         <TabsSection />
+      </div>
+      <div className="h-screen flex justify-center items-center bg-yellow-300">
+        <StepProgressBar />
       </div>
     </div>
   );
