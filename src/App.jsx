@@ -9,7 +9,6 @@ import TestimonialSlider from "./projects/TestimonialSlider/TestimonialSlider";
 import TipCalculator from "./projects/TipCalculator/TipCalculator";
 
 const App = () => {
-
   return (
     <div className="flex flex-col">
       <div className="h-screen flex justify-center items-center bg-gray-200">
