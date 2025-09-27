@@ -35,6 +35,7 @@ const TabsSection = () => {
         <div className="flex gap-4 mb-6">
           {data.map((item, idx) => (
             <button
+              key={idx}
               onClick={() => setTab(idx)}
               className={`px-4 py-2 rounded-lg font-semibold transition 
               ${

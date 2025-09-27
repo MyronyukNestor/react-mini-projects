@@ -24,11 +24,12 @@ const StepProgressBar = () => {
     <div className="flex flex-col items-center gap-15">
       <div className="flex items-center">
         {steps.map((step, idx) => (
-          <div className="flex flex-col gap-2">
+          <div key={idx} className="flex flex-col gap-2">
             <div className="flex items-center">
               <div
                 className={`rounded-full p-3 bg-white border-4 border-gray-200 ${
-                  currentStep >= idx && "border-green-800 transition-colors duration-800"
+                  currentStep >= idx &&
+                  "border-green-800 transition-colors duration-800"
                 }`}
               >
                 <span className="text-2xl text-green-800">

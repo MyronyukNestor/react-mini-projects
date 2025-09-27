@@ -1,5 +1,6 @@
 import AgeCalculator from "./projects/AgeCalculator/AgeCalculator";
 import DiceRollSimulator from "./projects/DiceRollSimulator/DiceRollSimulator";
+import RandomQuoteGenerator from "./projects/RandomQuoteGenerator/RandomQuoteGenerator";
 import RecipeBook from "./projects/RecipeBook/RecipeBook";
 import RockPaperScissors from "./projects/RockPaperScissors/RockPaperScissors";
 import StepProgressBar from "./projects/StepProgressBar/StepProgressBar";
@@ -37,6 +38,9 @@ const App = () => {
       </div>
       <div className="h-screen flex justify-center items-center bg-yellow-300">
         <StepProgressBar />
+      </div>
+      <div className="h-screen flex justify-center px-15 items-center bg-green-300">
+        <RandomQuoteGenerator />
       </div>
     </div>
   );
