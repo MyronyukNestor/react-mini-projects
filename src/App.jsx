@@ -6,6 +6,8 @@ import TemperatureConverter from "./projects/TemperatureConverter/TemperatureCon
 import TestimonialSlider from "./projects/TestimonialSlider/TestimonialSlider";
 import TipCalculator from "./projects/TipCalculator/TipCalculator";
 
+// test
+
 const App = () => {
   return (
     <div className="flex flex-col">
