@@ -34,7 +34,7 @@ const TestimonialSlider = () => {
   }, []);
 
   return (
- <div className="w-1/3 p-6 rounded-xl bg-purple-600 shadow-xl flex flex-col items-center justify-start text-white">
+ <div className="w-2xl p-6 rounded-xl bg-purple-600 shadow-xl flex flex-col items-center justify-start text-white">
       <img
         src={photoUrl}
         alt={name}

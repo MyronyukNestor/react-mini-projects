@@ -42,7 +42,7 @@ const AgeCalculator = () => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="text-white bg-blue-500 p-2 w-1/4 rounded-lg cursor-pointer hover:bg-blue-600 duration-100"
+            className="text-white bg-blue-500 p-2 rounded-lg cursor-pointer hover:bg-blue-600 duration-100"
           >
             Calculate Age
           </button>
