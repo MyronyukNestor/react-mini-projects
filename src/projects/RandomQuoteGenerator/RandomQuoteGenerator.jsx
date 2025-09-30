@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import { useEffect, useState } from "react";
 
 const apiKey = import.meta.env.VITE_QUOTE_API_KEY;
